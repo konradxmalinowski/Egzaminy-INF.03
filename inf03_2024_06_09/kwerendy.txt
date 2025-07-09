@@ -1,0 +1,4 @@
+select miejsce, liczbaDni from wycieczki where cena < 1000;
+select liczbaDni, avg(cena) as sredniaCena from wycieczki group by 1;
+select miejsce, nazwa from wycieczki join zdjecia on zdjecia.Wycieczki_id = wycieczki.id where cena > 500;
+create user 'Ewa'@'localhost' identified by 'Ewa!Ewa';
