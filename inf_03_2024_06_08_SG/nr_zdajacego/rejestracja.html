@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styl.css" />
+    <script src="app.js" defer></script>
+    <title>Sklep - rejestracja</title>
+  </head>
+  <body>
+    <aside>
+      <img src="./pliki8/obraz.png" alt="promocje" />
+      <h2>Sprawdź promocje</h2>
+      <table>
+        <tr>
+          <th>co?</th>
+          <th>ile taniej?</th>
+        </tr>
+        <tr>
+          <td>ubrania</td>
+          <td>15%</td>
+        </tr>
+        <tr>
+          <td>buty</td>
+          <td>25%</td>
+        </tr>
+      </table>
+    </aside>
+    <header>
+      <h1>Zarejestruj się w sklepie</h1>
+    </header>
+    <main>
+      <button class="klient-button">Klient</button>
+      <button class="adres-button">Adres</button>
+      <button class="kontakt-button">Kontakt</button>
+
+      <div class="klient-div">
+        <p>Imię</p>
+        <input type="text" name="imie" id="imie" placeholder="Wpisz dane..." />
+
+        <p>Nazwisko</p>
+        <input type="text" name="nazwisko" id="nazwisko" />
+
+        <p>Data urodzenia</p>
+        <input type="date" name="data_ur" id="data_ur" />
+      </div>
+      <div class="adres-div">
+        <p>Ulica</p>
+        <input type="text" name="ulica" id="ulica" />
+
+        <p>Numer</p>
+        <input type="number" name="numer" id="numer" />
+
+        <p>Miasto</p>
+        <input type="text" name="miasto" id="miasto" />
+      </div>
+      <div class="kontakt-div">
+        <p>Numer komórkowy</p>
+        <input type="tel" name="numer-komorkowy" id="numer-komorkowy" />
+
+        <label
+          ><input type="checkbox" name="rodo" id="rodo" />Akceptuję RODO</label
+        >
+        <button class="zatwierdz-dane-przycisk">Zatwierdź dane</button>
+      </div>
+    </main>
+    <section>
+      <div></div>
+    </section>
+    <footer>
+      <h4>Rejestrację do sklepu wykonał: (nr_zdajacego)</h4>
+    </footer>
+  </body>
+</html>

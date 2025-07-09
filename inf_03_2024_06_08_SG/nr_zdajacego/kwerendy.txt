@@ -1,0 +1,7 @@
+select imie, nazwisko from osoby where year(dataUr) > 2000;
+
+select DISTINCT miasto from adresy order by 1 asc;
+
+select osoby.imie, osoby.nazwisko, telefony.numer from osoby join telefony on osoby.id = telefony.Osoby_id;
+
+alter TABLE adresy add numerMieszkania int after numer;

@@ -1,0 +1,8 @@
+select nazwa, ilosc, nazwaProd from materialy join producenci on producenci.id = materialy.Jednostki_id where ilosc > 9;
+
+select nazwa, nazwaProd, nazwaJedn from materialy join producenci on materialy.Producenci_id = producenci.id join jednostki on jednostki.id = materialy.Jednostki_id;
+
+
+create user 'zaopatrzenie'@'localhost' identified by 'Z@op@trzenie';
+
+grant SELECT, update, insert, delete on firma.* to 'Z@op@trzenie';

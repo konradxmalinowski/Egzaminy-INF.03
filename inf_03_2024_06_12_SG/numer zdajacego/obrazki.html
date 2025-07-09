@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styl.css" />
+    <script src="app.js" defer></script>
+    <title>Efekty obrazu</title>
+  </head>
+  <body>
+    <header><h2>Efekty na obrazach</h2></header>
+    <main>
+      <section>
+        <img
+          src="./pliki12/pszczola.jpg"
+          alt="pszczoła na fioletowym kwiatku"
+        />
+        <label><input type="radio" name="pszczola" id="blur" />Blur</label>
+        <label><input type="radio" name="pszczola" id="sepia" />Sepia</label>
+        <label
+          ><input type="radio" name="pszczola" id="negatyw" />Negatyw</label
+        >
+        <button>Zastosuj</button>
+      </section>
+      <section>
+        <img src="./pliki12/pomarancza.jpg" alt="drzewo pomarańczy" />
+        <div>
+          <button>Kolorowy</button>
+          <button>Czarno-biały</button>
+        </div>
+      </section>
+      <section>
+        <img src="./pliki12/owoce.jpg" alt="Kosz pełen owoców" />
+        <input
+          type="range"
+          name="suwak1"
+          id="suwak1"
+          min="0"
+          max="100"
+          value="100"
+        />
+        <button>Zastosuj</button>
+      </section>
+      <section>
+        <img src="./pliki12/zolw.jpg" alt="Żółw w wodzie" />
+        <input type="range" name="suwak2" id="suwak2" min="0" max="250" />
+        <button>Zastosuj</button>
+      </section>
+    </main>
+    <footer>
+      <p>
+        <a href="http://www.css.com/" target="_blank"
+          >Zobacz inne efekty obrazu</a
+        >
+      </p>
+      <p>Stronę wykonał: (nr_zdajacego)</p>
+    </footer>
+  </body>
+</html>

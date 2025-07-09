@@ -1,0 +1,12 @@
+Zapytanie 1: select produkt.kolor, buty.cena, kategorie.nazwa_kat from buty 
+inner join produkt on buty.model = produkt.model 
+inner join kategorie on kategorie.id_kat = buty.id_kat
+where wysokosc_buta > 10;
+
+Zapytanie 2: select cena, nazwa, nazwa_kat from buty
+inner join kategorie on buty.id_kat = kategorie.id_kat;
+
+Zapytanie 3:
+
+
+Zapytanie 4:

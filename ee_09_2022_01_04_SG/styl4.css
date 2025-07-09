@@ -1,0 +1,57 @@
+* {
+  font-family: Garamond;
+}
+
+header {
+  background-color: saddlebrown;
+  color: white;
+  text-align: center;
+  height: 50px;
+}
+
+.blok-lewy {
+  background-color: tan;
+  height: 500px;
+  width: 40%;
+  float: left;
+}
+
+.pierwszy-blok-prawy,
+.drugi-blok-prawy {
+  background-color: tan;
+  height: 250px;
+  width: 60%;
+  float: left;
+}
+
+footer {
+  background-color: saddlebrown;
+  color: white;
+  clear: both;
+}
+
+form {
+  background-color: saddlebrown;
+  color: white;
+  padding: 10px 30px;
+  width: 300px;
+}
+
+p {
+  position: relative;
+  overflow: visible;
+}
+
+p::before {
+  content: 'STATUS: ';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -60px;
+}
+
+/* elementy, które są widoczne na obrazie 1, ale nie ma ich w wymaganiach CSS */
+label {
+  display: block;
+  margin-bottom: 7px;
+}

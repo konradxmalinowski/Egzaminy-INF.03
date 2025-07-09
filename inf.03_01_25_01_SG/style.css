@@ -1,0 +1,59 @@
+* {
+  font-family: Helvetica;
+}
+
+body {
+  background-color: #eaeaea;
+}
+
+nav,
+footer {
+  background-color: #625b5b;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  margin-left: 40px;
+  list-style-type: circle;
+}
+
+nav a {
+  font-weight: bold;
+  background-color: #eaeaea;
+  color: #625b5b;
+  padding: 10px;
+  margin: 50px;
+  border-radius: 20px;
+}
+
+nav a:hover {
+  background-color: #625b5b;
+  color: #eaeaea;
+  border: 1px solid #eaeaea;
+}
+
+table {
+  border: 1px dashed #625b5b;
+  width: 60%;
+  margin-left: 40px;
+}
+
+table,
+td,
+th {
+  text-align: center;
+}
+
+.kontrolki {
+  margin: 5px;
+}
+
+#obliczanie-rat :is(label, button) {
+  display: block;
+}

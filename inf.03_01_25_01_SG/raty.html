@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Kursy komputerowe</title>
+  </head>
+  <body>
+    <header>
+      <img src="pliki10/klawiatura1.jpg" alt="kursy komputerowe" />
+    </header>
+    <nav>
+      <a href="index.html">Strona główna</a>
+      <a href="raty.html">Koszt rat</a>
+      <a href="https://moje-szkolenia.pl/">Nasz partner</a>
+    </nav>
+    <main>
+      <h3>Oblicz miesięczną ratę</h3>
+      <section id="obliczanie-rat">
+        <label
+          ><input
+            type="checkbox"
+            name="react"
+            id="react"
+            value="react"
+            class="kontrolki"
+          />Kurs React.js</label
+        >
+        <label
+          ><input
+            type="checkbox"
+            name="js"
+            id="js"
+            value="js"
+            class="kontrolki"
+          />Kurs JavaScript</label
+        >
+        <label>
+          Liczba rat:
+          <input type="number" name="raty" id="raty" class="kontrolki" />
+        </label>
+
+        <select name="miasto" id="miasto" class="kontrolki">
+          <option value="Warszawa">Warszawa</option>
+          <option value="Katowice">Katowice</option>
+          <option value="Gdansk">Gdańsk</option>
+        </select>
+
+        <button class="kontrolki" id="oblicz">Oblicz</button>
+
+        <p id="wynik"></p>
+      </section>
+    </main>
+    <footer>
+      <p>Autor strony: 0000000000</p>
+    </footer>
+
+    <script>
+      const obliczBtn = document.getElementById('oblicz');
+      const paragraf = document.getElementById('wynik');
+      let czyReact;
+      let czyJavaScript;
+      let iloscRat;
+      let miasto;
+      let suma = 0;
+
+      function obliczKoszt() {
+        czyReact = document.getElementById('js').checked;
+        czyJavaScript = document.getElementById('react').checked;
+        iloscRat = parseInt(document.getElementById('raty').value);
+        miasto = document.getElementById('miasto').value;
+
+        if (czyReact) suma += 5000;
+        if (czyJavaScript) suma += 3000;
+      }
+
+      function wyswietlNaStronie() {
+        let trescParagrafu = `Kurs odbędzie się w ${miasto}. Koszt całkowity: ${suma}zł. Płacisz: ${iloscRat} rat po ${
+          suma / iloscRat
+        }zł`;
+
+        paragraf.textContent = trescParagrafu;
+      }
+
+      obliczBtn.addEventListener('click', () => {
+        obliczKoszt();
+        wyswietlNaStronie();
+      });
+    </script>
+  </body>
+</html>

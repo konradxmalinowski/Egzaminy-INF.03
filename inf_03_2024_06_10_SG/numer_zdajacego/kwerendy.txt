@@ -1,0 +1,7 @@
+select count(*) as ilosc, pensja from pracownicy group by 2 order by 2 desc;
+
+select pracownicy.imie, pracownicy.nazwisko, stanowiska.nazwa from pracownicy inner join stanowiska on pracownicy.stanowiska_id = stanowiska.id where staz > 10;
+
+select imie, nazwisko, pensja from pracownicy where staz BETWEEN 10 and 20;
+
+alter table stanowiska add minPensja int;

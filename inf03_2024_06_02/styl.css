@@ -1,0 +1,82 @@
+* {
+  font-family: Garamond;
+}
+
+header {
+  background-color: tomato;
+  color: white;
+  text-align: center;
+  width: 80%;
+  height: 80px;
+}
+
+main {
+  width: 80%;
+  height: 600px;
+}
+
+aside {
+  background-color: coral;
+  width: 20%;
+  height: 680px;
+  position: absolute;
+  right: 0;
+  top: 20px;
+}
+
+footer {
+  background-color: tomato;
+  color: white;
+  text-align: center;
+}
+
+img {
+  border-radius: 50%;
+  padding-inline: 10px;
+}
+
+main > div {
+  border: 1px solid tomato;
+  margin: 15px;
+  height: 470px;
+  overflow: scroll;
+}
+
+.jolanta,
+.krzysztof {
+  border-radius: 5px;
+  width: 90%;
+  height: 70px;
+  margin: 2%;
+  padding: 3px;
+}
+
+.jolanta {
+  background-color: #eee;
+}
+
+.jolanta img,
+.jolanta p {
+  float: left;
+}
+
+.krzysztof {
+  background-color: #ccc;
+}
+
+.krzysztof img,
+.krzysztof p {
+  float: right;
+}
+
+#generuj,
+#wyslij {
+  background-color: tomato;
+  border: 1px solid darkred;
+  padding: 5px;
+  font-weight: bold;
+}
+
+input {
+  width: 500px;
+}

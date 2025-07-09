@@ -1,0 +1,5 @@
+insert into logowanie (nick, haslo, id) VALUES ('Jeremi', 'Jer123', 3);
+select floor(avg(rokUr)) as 'Średni rok urodzenia' from uczestnicy;
+select imie, nazwisko, nick, haslo from uczestnicy join logowanie on uczestnicy.id = logowanie.id where imie like 'J%';
+create user 'uczestnik'@'localhost' identified by 'Ucz123&';
+grant SELECT, update on chat.uczestnicy to 'uczestnik'@'localhost';
