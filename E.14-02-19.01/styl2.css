@@ -1,0 +1,76 @@
+* {
+  font-family: georgia;
+}
+
+header {
+  background-color: #824555;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+#pierwszy-blok,
+#drugi-blok {
+  background-color: #a26475;
+  color: white;
+  width: 30%;
+  height: 300px;
+  float: left;
+}
+
+#trzeci-blok {
+  background-color: #a26475;
+  color: white;
+  width: 40%;
+  height: 300px;
+  text-align: right;
+  float: left;
+}
+
+main {
+  clear: both;
+  background-color: #f0eae2;
+  padding: 50px;
+}
+
+footer {
+  background-color: #824555;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+table,
+td,
+th {
+  border: 2px solid #69293a;
+  padding: 7px;
+  border-collapse: collapse;
+}
+
+ul {
+  list-style-type: square;
+}
+
+#czerwony {
+  background-color: red;
+}
+
+#zielony {
+  background-color: green;
+}
+
+#niebieski {
+  background-color: blue;
+}
+
+#block {
+  display: block;
+}
+
+/* to czego nie ma w wymagania CSS, ale jest widoczne na stronie */
+#czerwony,
+#zielony,
+#niebieski {
+  padding: 7px;
+}
