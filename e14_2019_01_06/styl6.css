@@ -1,0 +1,50 @@
+* {
+  font-family: Tahoma;
+}
+
+header,
+footer {
+  background-color: rgb(72, 209, 204);
+  color: white;
+  text-align: center;
+  padding: 5px;
+}
+
+footer {
+  clear: both;
+}
+
+.ciasteczka {
+  background-color: rgb(139, 69, 19);
+  color: white;
+  padding: 10px;
+}
+
+.lewy-blok {
+  background-color: rgb(175, 238, 238);
+  width: 70%;
+  height: 600px;
+  float: left;
+}
+
+.prawy-blok {
+  background-color: rgb(175, 238, 238);
+  width: 30%;
+  height: 600px;
+  float: left;
+}
+
+p {
+  font-size: 150%;
+}
+
+img {
+  border: 1px solid grey;
+  height: 250px;
+  padding: 5px;
+}
+
+img:hover {
+  height: 300px;
+  border-color: black;
+}
