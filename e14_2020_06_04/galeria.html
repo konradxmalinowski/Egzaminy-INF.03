@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styl.css" />
+    <title>Sklep</title>
+  </head>
+  <body>
+    <header>
+      <h1>Ozdoby - sklep</h1>
+    </header>
+    <section class="lewy">
+      <h2>OZDOBY</h2>
+      <a href="galeria.html">Galeria</a>
+      <a href="zamowienie.php">Zamówienie</a>
+    </section>
+    <section class="srodkowy">
+      <img src="choinka.jpg" alt="ozdoby choinkowe" id="choinka" />
+      <img src="mikolaj.jpg" alt="ozdoby choinkowe" id="mikolaj" />
+      <img src="renifer.jpg" alt="ozdoby choinkowe" id="renifer" />
+      <p>Wybierz ozdobę w kółku</p>
+      <p id="wynik"></p>
+    </section>
+    <section class="prawy">
+      <img src="animacja.gif" alt="animacja" />
+    </section>
+    <footer>
+      <h3>Autor strony: Konrad Malinowski</h3>
+    </footer>
+
+    <script defer>
+      const wynik = document.querySelector('#wynik');
+      const choinka = document.querySelector('#choinka');
+      const mikolaj = document.querySelector('#mikolaj');
+      const renifer = document.querySelector('#renifer');
+
+      choinka.addEventListener('mouseover', () => {
+        wynik.textContent = 'Wybrałeś choinkę. Cena 10zł';
+      });
+
+      mikolaj.addEventListener('mouseover', () => {
+        wynik.textContent = 'Wybrałeś mikołaja. Cena 12zł';
+      });
+
+      renifer.addEventListener('mouseover', () => {
+        wynik.textContent = 'Wybrałeś renifera. Cena 8zł';
+      });
+    </script>
+  </body>
+</html>
