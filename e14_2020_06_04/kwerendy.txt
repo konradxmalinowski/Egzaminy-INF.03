@@ -1,0 +1,14 @@
+-- 1. 
+CREATE TABLE `sklep`.`zamowienia` (`id` INT UNSIGNED NOT NULL , `imie` VARCHAR(255) NULL DEFAULT NULL , `nazwisko` VARCHAR(255) NULL DEFAULT NULL , `adres_email` VARCHAR(255) NULL DEFAULT NULL , `liczba_choinek` INT NULL DEFAULT NULL , `liczba_mikolajow` INT NULL DEFAULT NULL , `liczba_reniferow` INT NULL DEFAULT NULL , `info` BOOLEAN NULL DEFAULT NULL ) ENGINE = InnoDB;
+
+-- 2.
+ALTER TABLE `zamowienia` ADD PRIMARY KEY(`id`);
+
+-- 3.
+create user 'klient'@'localhost' identified by 'klient123';
+
+-- 4.
+grant insert on sklep.* to klient;
+
+-- 5.
+INSERT INTO `zamowienia` (`id`, `imie`, `nazwisko`, `adres_email`, `liczba_choinek`, `liczba_mikolajow`, `liczba_reniferow`, `info`) VALUES ('1', 'Jan', 'Kowalski', 'jKowalski@poczta.pl', NULL, NULL, NULL, NULL);
