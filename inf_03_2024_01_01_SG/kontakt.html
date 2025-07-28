@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styl.css" />
+    <link rel="shortcut icon" href="./logo.png" type="image/x-icon" />
+    <script src="app.js" defer></script>
+    <title>Firma IT</title>
+  </head>
+  <body>
+    <div>
+      <section class="logo">
+        <img src="logo.png" alt="firma it" />
+      </section>
+      <nav>
+        <a href="index.html">Strona główna</a>
+        <a href="uslugi.html">Usługi</a>
+        <a href="kontakt.html">Kontakt</a>
+      </nav>
+      <header>
+        <img src="animacja.gif" alt="Usługi informatyczne" />
+      </header>
+      <main>
+        <h2>Kontakt</h2>
+        <form>
+          <table>
+            <tr>
+              <td><label for="imie">Imię:</label></td>
+              <td><input type="text" name="imie" id="imie" /></td>
+            </tr>
+            <tr>
+              <td><label for="nazwisko">Nazwisko</label></td>
+              <td><input type="text" name="nazwisko" id="nazwisko" /></td>
+            </tr>
+            <tr>
+              <td><label for="email">E-mail:</label></td>
+              <td><input type="email" name="email" id="email" /></td>
+            </tr>
+            <tr>
+              <td><label for="zgloszenie">Zgłoszenie</label></td>
+              <td>
+                <textarea
+                  name="zgloszenie"
+                  id="zgloszenie"
+                  cols="40"
+                  rows="10"
+                ></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <input
+                  type="checkbox"
+                  name="regulamin"
+                  id="regulamin"
+                />Zapoznałam/em się z regulaminem
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <button type="reset" id="resetuj-button">Resetuj</button
+                ><button id="przeslij-button" type="submit">Prześlij</button>
+              </td>
+            </tr>
+          </table>
+        </form>
+        <hr />
+        <p id="wynik"></p>
+      </main>
+      <footer>Autor strony: <strong>Konrad Malinowski</strong></footer>
+    </div>
+  </body>
+</html>
