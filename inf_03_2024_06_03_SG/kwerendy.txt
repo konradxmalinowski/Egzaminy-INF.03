@@ -1,0 +1,4 @@
+select nazwa, rzeka, stanAlarmowy from wodowskazy;
+select nazwa, rzeka, stanOstrzegawczy, stanAlarmowy, stanWody from wodowskazy join pomiary on pomiary.wodowskazy_id = wodowskazy.id where dataPomiaru = '2022-05-05';
+select nazwa, rzeka, stanOstrzegawczy, stanAlarmowy, stanWody from wodowskazy join pomiary on pomiary.wodowskazy_id = wodowskazy.id where dataPomiaru = '2022-05-05' and stanWody > stanOstrzegawczy;
+select dataPomiaru, avg(stanWody) from pomiary group by 1
