@@ -2,7 +2,7 @@
 
 $conn = mysqli_connect('localhost', 'root', '', 'egzamin');
 
-if (!$conn) {
+if ($conn->connect_error) {
     echo '<p>Błąd łączenia z bazą danych</p>';
     exit;
 }
