@@ -2,7 +2,7 @@
 
 $conn = new mysqli('localhost', 'root', '', 'portal');
 
-if (!$conn) {
+if ($conn->connect_error) {
     echo "<p>Błąd połączenia z bazą danych</p>";
     exit;
 }
