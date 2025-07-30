@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styl2.css" />
+    <script src="app.js" defer></script>
+    <title>Galeria</title>
+  </head>
+  <body>
+    <header><h1>Galeria obrazów</h1></header>
+    <section class="lewy">
+      <img src="./zdjecie.jpg" alt="zdjęcie dnia" />
+      <h3>Zdjęcia opublikowali</h3>
+      <table>
+        <tr>
+          <td>Anna Porada</td>
+          <td>12 zdjęć</td>
+        </tr>
+        <tr>
+          <td>Krzysztof Wasilewski</td>
+          <td>12 zdjęć</td>
+        </tr>
+        <tr>
+          <td>Monika Kowalska</td>
+          <td>4 zdjęcia</td>
+        </tr>
+      </table>
+    </section>
+    <section class="prawy">
+      <button id="prev">prev</button>
+      <img src="./1.jpg" alt="galeria" id="duzy-obraz" />
+      <button id="next">next</button>
+      <hr />
+      <section class="miniatury">
+        <img src="./1.jpg" alt="miniatura" class="miniatura" />
+        <img src="./2.jpg" alt="miniatura" class="miniatura" />
+        <img src="./3.jpg" alt="miniatura" class="miniatura" />
+        <img src="./4.jpg" alt="miniatura" class="miniatura" />
+        <img src="./5.jpg" alt="miniatura" class="miniatura" />
+      </section>
+    </section>
+    <footer>
+      <a href="https://pixabay.com" target="_blank">Więcej obrazów</a>
+      <p>Galerię wykonał: Konrad Malinowski</p>
+    </footer>
+  </body>
+</html>
