@@ -7,7 +7,7 @@ define('DB_NAME', 'psy');
 
 $conn = mysqli_connect(HOST, USER_NAME, USER_PASS, DB_NAME);
 
-if (!$conn) {
+if ($conn->connect_error) {
     echo '<p>Nie połączono z bazą danych</p>';
     exit;
 }

@@ -40,7 +40,7 @@
             <?php
 
             $conn = new mysqli('localhost', 'root', '', 'rzeki');
-            if (!$conn) {
+            if ($conn->connect_error) {
                 echo "<p>Błąd łączenia z bazą danych</p>";
                 exit;
             }
