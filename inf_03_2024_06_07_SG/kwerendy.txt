@@ -1,0 +1,11 @@
+-- 1
+update wagi set dzien = CURRENT_DATE(), czas = CURRENT_TIME() where lokalizacje_id in (2, 3, 4);
+
+-- 2
+select ulica from lokalizacje
+
+-- 3
+insert into wagi (lokalizacje_id, waga, rejestracja, dzien, czas) VALUES (5, FLOOR(RAND() * (10 - 1 + 1) + 1), 'DW12345', CURRENT_DATE(), CURRENT_TIME());
+
+-- 4 
+select rejestracja, waga, dzien, czas from wagi join lokalizacje on lokalizacje.id = wagi.lokalizacje_id where waga > 5;

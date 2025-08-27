@@ -1,0 +1,69 @@
+* {
+  font-family: Tahoma;
+}
+
+header section {
+  float: left;
+  background-color: #519657;
+  color: white;
+  text-align: center;
+  height: 150px;
+}
+
+.baner-lewy {
+  width: 70%;
+}
+
+.baner-prawy {
+  width: 30%;
+}
+
+.clear-both {
+  clear: both;
+}
+
+.lewy,
+.prawy,
+main {
+  background-color: #e1e1e1;
+  height: 450px;
+  float: left;
+}
+
+.lewy,
+.prawy {
+  width: 25%;
+}
+
+main {
+  width: 50%;
+  overflow: auto;
+}
+
+footer {
+  background-color: #80c683;
+  text-align: center;
+  clear: both;
+}
+
+.obraz2 {
+  width: 100%;
+  padding: 100px 0;
+}
+
+table {
+  border: 1px solid #80c683;
+}
+
+table td,
+table th {
+  padding: 2px;
+}
+
+table tr:hover {
+  background-color: #80c683;
+}
+
+table tr:last-of-type {
+  background-color: red;
+}
