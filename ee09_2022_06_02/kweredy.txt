@@ -1,0 +1,4 @@
+select imie, nazwisko, miasto from klient where miasto in ('Legionowo', 'Warszawa');
+select nazwa from produkty where cena_brutto > 500;
+select kategorie.nazwa_kategorii, avg(cena_brutto) from produkty join kategorie on kategorie.id_kat = produkty.id_kat group by 1;
+select zamowienia.id_zam, zamowienia.ilosc, zamowienia.wartosc, produkty.nazwa from produkty join zamowienia on zamowienia.id_prod = produkty.id_prod where zamowienia.id_klient = 2;

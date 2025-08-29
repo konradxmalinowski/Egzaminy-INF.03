@@ -1,0 +1,63 @@
+.kontener {
+  font-family: Helvetica, sans-serif;
+  background-color: linen;
+  color: #222;
+  margin: auto;
+  width: 90%;
+}
+
+header section {
+  background-color: black;
+  color: white;
+  width: 50%;
+  height: 100px;
+  float: left;
+}
+
+.clear-both {
+  clear: both;
+}
+
+main {
+  padding: 20px;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+table {
+  margin: 40px;
+}
+
+th,
+td {
+  padding: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+a {
+  color: #aaa;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+}
+
+li {
+  display: inline-block;
+  padding: 5px;
+  margin: 10px;
+  border-bottom: 1px solid white;
+}
+
+/* to co jest widoczne na obrazie 2 ale nie jest uwzględnione w wymaganiach */
+img.obraz {
+  display: block;
+  margin-bottom: 4px;
+}
