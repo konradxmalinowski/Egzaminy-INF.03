@@ -1,0 +1,4 @@
+select data from imieniny where imiona like '%Karol%'; 
+select imiona from imieniny where data = '04-05'; 
+select count(*) as ilosc_imion from imieniny where imiona like '%mir%';
+alter table imieniny add zyczenia varchar(500); 
