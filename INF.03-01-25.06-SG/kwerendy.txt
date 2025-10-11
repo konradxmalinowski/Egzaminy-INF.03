@@ -1,0 +1,8 @@
+select id, nazwa, zdjecie from gry
+select nazwa, left(opis, 100), punkty, cena from gry where id = 1
+select nazwa, punkty from gry
+order by punkty DESC
+limit 5
+
+insert into gry (nazwa, opis, punkty, cena, zdjecie) values ('Zamczysko',
+'Na odludziu stoi opuszczone zamczysko, w którym znajduje się skarb strzeżony przez złowrogie demony i duchy', 200, 50, 'zamczysko.jpg');
