@@ -1,0 +1,4 @@
+select id_zadania, zadanie, data from zadania
+insert into zadania (data, osoba_id, zadanie) VALUES ('2024-05-10', 1, 'spotkanie firmowe');
+delete from zadania where id_zadania = 2;
+SELECT imie, nazwisko, telefon, zadania.zadanie, zadania.data from zadania join osoby on osoby.id_osoba = zadania.osoba_id
