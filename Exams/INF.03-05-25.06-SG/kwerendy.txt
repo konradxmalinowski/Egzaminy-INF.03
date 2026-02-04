@@ -1,0 +1,14 @@
+-- 1
+SELECT plik, nr_klienta, liczba_odbitek from zamowienia where zamowienia.rodzaj = 'matowy' and zamowienia.liczba_odbitek > 100;
+
+-- 2
+SELECT zamowienia.nr_klienta, (zamowienia.liczba_odbitek * zdjecia.cena) as "Do zapłaty"
+from zamowienia
+join zdjecia on zdjecia.rodzaj = zamowienia.rodzaj
+where zamowienia.nr_klienta = 3
+
+-- 3
+SELECT zamowienia.rodzaj, sum(*) from zamowienia where zamowienia.rodzaj = 'błyszczący' group by zamowienia.rodzaj 
+
+-- 4
+create user 'anna'@'localhost' identified by '@NNa';
