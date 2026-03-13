@@ -1,0 +1,4 @@
+1. SELECT wycieczki.nazwa FROM wycieczki WHERE wycieczki.poczatek in ('Muszyna' , 'Wieliczka');
+2. SELECT wycieczki.nazwa, wycieczki.opis, wycieczki.poczatek, zdjecia.zrodlo FROM wycieczki JOIN zdjecia ON zdjecia.id = wycieczki.zdjecia_id
+3. SELECT COUNT(wycieczki.id) FROM wycieczki;
+4. ALTER TABLE wycieczki ADD COLUMN ocena TINYINT;
