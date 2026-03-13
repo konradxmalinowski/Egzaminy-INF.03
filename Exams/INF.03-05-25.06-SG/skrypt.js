@@ -2,7 +2,7 @@ const dodajDoKoszykaButton = document.querySelector("#dodaj-button");
 const rezultat = document.querySelector("#rezultat");
 const obrazInput = document.querySelector("input#zdjecie");
 const kopieInput = document.querySelector("input#kopie");
-const czyMatowyInput = document.querySelector("input#papier-matowy")
+const czyMatowyInput = document.querySelector("input#papier-matowy");
 const czyBlyszczacyInput = document.querySelector("input#papier-blyszczacy");
 
 const CENA_PAPIERU_BLYSZCZACEGO = 1.5;
