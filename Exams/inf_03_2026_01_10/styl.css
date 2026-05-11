@@ -1,0 +1,58 @@
+* {
+    font-family: Garamond;
+    text-align: center;
+}
+
+aside {
+    background-color: #3A3C3E;
+    color: white;
+    width: 10%;
+    height: 600px;
+}
+
+main {
+    width: 45%;
+    height: 600px;
+    overflow: auto;
+}
+
+section {
+    background-size: cover;
+    color: white;
+    width: 45%;
+    height: 600px;
+}
+
+h1 {
+    background-color: rgba(211, 211, 211, 0.3);
+    padding: 20px 0;
+    margin: 0;
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 2em;
+    font-variant: small-caps;
+}
+
+li {
+    text-align: left;
+}
+
+a {
+    color: Gainsboro;
+    font-size: 120%;
+    font-style: italic;
+}
+
+a:hover {
+    color: white;
+}
+
+aside, main, section {
+    float: left;
+}
+
+.clear-both {
+    clear: both;
+}
