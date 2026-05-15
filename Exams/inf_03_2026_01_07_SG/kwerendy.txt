@@ -1,0 +1,11 @@
+-- 1
+SELECT ROUND(AVG(temperatura), 2) FROM pomiary WHERE id_miesiac = 7;
+
+-- 2
+INSERT INTO miejscowosc (kraj, nazwa) VALUES ('Ukraina', 'Kijów');
+
+-- 3
+SELECT miejscowosc.nazwa, miejscowosc.kraj, pomiary.temperatura FROM miejscowosc JOIN pomiary on pomiary.id_miejscowosc = miejscowosc.id WHERE pomiary.id_miesiac = 7;
+
+-- 4
+SELECT miesiace.nazwa, AVG(pomiary.temperatura) FROM miesiace JOIN pomiary ON pomiary.id_miesiac = miesiace.id GROUP BY miesiace.nazwa
