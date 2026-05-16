@@ -1,0 +1,55 @@
+* {
+    font-family: 'Gill Sans MT', 'Calibri';
+}
+
+body {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+}
+
+.header-lewy {
+    width: 40%;
+}
+
+.header-prawy {
+    width: 60%;
+    text-align: center;
+}
+
+.wszyscy-aktorzy {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.aktor-index {
+    width: 15em;
+    text-align: center;
+}
+
+.aktor-podstrona {
+    width: 25em;
+    text-align: center;
+}
+
+img {
+    width: 90%;
+    border-radius: 50%;
+}
+
+.aktor-index p, .aktor-podstrona p {
+    font-size: 125%;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #E30613;
+}
