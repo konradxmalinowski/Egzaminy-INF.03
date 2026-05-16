@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styl.css">
+    <title>Tatuaże</title>
+    <script src="skrypt.js" defer></script>
+</head>
+<body>
+    <div class="kontener">
+        <div class="kontener-lewy">
+            <header class="header-1">
+                <img src="logo.png" alt="salon">
+            </header>
+            <aside>
+                <h3>Dodaj wzór</h3>
+                    <form>
+                        <label for="wzor">Wzór: </label><br>
+                        <input type="file" name="wzor" id="wzor" accept="image/png"><br>
+                        <label for="kolor">Kolor: </label><br>
+                        <select name="kolor" id="kolor">
+                            <option value="Czarny">Czarny</option>
+                            <option value="Czerwony">Czerwony</option>
+                            <option value="Zielony">Zielony</option>
+                            <option value="Niebieski">Niebieski</option>
+                        </select><br>
+                        <label for="cena">Cena: </label><br>
+                        <input type="number" name="cena" id="cena"><br>
+                        <button id="dodaj-wzor-button">Dodaj wzór</button><br>
+                    </form>
+            </aside>
+        </div>
+        <div class="kontener-prawy">
+            <header class="header-2">
+                <h1>Studio Tatuażu</h1>
+            </header>
+            <section>
+                <h2>Galeria</h2>
+                <img src="smok.png" alt="smok.png" class="miniatury">
+                <img src="koliber.png" alt="koliber.png" class="miniatury">
+            </section>
+        </div>
+    </div>
+    <footer>
+        <p>Autor strony: Konrad Malinowski</p>
+    </footer>
+</body>
+</html>

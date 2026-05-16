@@ -1,0 +1,5 @@
+/* aby odwzorować wygląd strony dodałem dodatkowe style: */
+h1 {
+    margin-top: 0;
+}
+/* nie zostalo to opisane w poleceniu, ale jest widoczne */
