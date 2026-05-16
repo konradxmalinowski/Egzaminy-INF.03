@@ -36,15 +36,15 @@ Oparty na analizie prawdziwych egzaminów 2024–2026. Zawiera:
 ### 🟡 INF.03.3 – Projektowanie Stron Internetowych
 | Plik | Zawartość |
 |------|-----------|
-| [HTML/01_HTML_TAGS.md](./INF.03.3_Projektowanie_stron/HTML/01_HTML_TAGS.md) | Semantyczne znaczniki HTML5, formularze (wszystkie typy input), tabele, media, atrybuty ARIA, dostępność |
+| [01_HTML_TAGS.md](./INF.03.3_Projektowanie_stron/01_HTML_TAGS.md) | Semantyczne znaczniki HTML5, formularze (wszystkie typy input), tabele, media, atrybuty ARIA, dostępność |
 | [CSS/01_CSS_SELEKTORY.md](./INF.03.3_Projektowanie_stron/CSS/01_CSS_SELEKTORY.md) | Selektory (element/klasa/ID/atrybut/pseudo), box model, kolory, typografia, transformacje, animacje |
 | [CSS/02_CSS_LAYOUT.md](./INF.03.3_Projektowanie_stron/CSS/02_CSS_LAYOUT.md) | **Float layout (wzorzec z egzaminu!)**, clearfix, Flexbox (pełna ściąga), Grid, pozycjonowanie, responsive/media queries |
 | [JavaScript/01_JS_BASICS.md](./INF.03.3_Projektowanie_stron/JavaScript/01_JS_BASICS.md) | Zmienne, pętle, funkcje, tablice, DOM API, eventy, fetch API, async/await |
 | [JavaScript/02_JQUERY.md](./INF.03.3_Projektowanie_stron/JavaScript/02_JQUERY.md) | Selektory jQuery, metody DOM, eventy, AJAX, animacje, traversal, walidacja formularzy |
-| [Grafika/01_GRAFIKA.md](./INF.03.3_Projektowanie_stron/Grafika/01_GRAFIKA.md) | Rastrowa vs wektorowa, formaty (JPEG/PNG/GIF/WebP/SVG), modele barw (RGB/CMYK/HSL/Hex), głębia bitowa, optymalizacja, programy graficzne, CSS background |
-| [Multimedia/01_VIDEO_AUDIO.md](./INF.03.3_Projektowanie_stron/Multimedia/01_VIDEO_AUDIO.md) | Formaty wideo/audio, kodeki vs kontenery, HTML5 `<video>`/`<audio>`, responsive video, YouTube embed, Canvas |
-| [Hosting/01_HOSTING_DOMENY.md](./INF.03.3_Projektowanie_stron/Hosting/01_HOSTING_DOMENY.md) | Rodzaje hostingu (shared/VPS/cloud), domeny i TLD, rekordy DNS, SSL/Let's Encrypt, Apache vs Nginx, .htaccess, FTP/SFTP, XAMPP/MAMP |
-| [Testowanie/01_TESTOWANIE_WALIDACJA.md](./INF.03.3_Projektowanie_stron/Testowanie/01_TESTOWANIE_WALIDACJA.md) | DevTools (F12), walidacja HTML/CSS (W3C), SEO (meta, OpenGraph, Core Web Vitals), WCAG 2.0 (A/AA/AAA), PageSpeed, Lighthouse |
+| [03_GRAFIKA.md](./INF.03.3_Projektowanie_stron/03_GRAFIKA.md) | Rastrowa vs wektorowa, formaty (JPEG/PNG/GIF/WebP/SVG), modele barw (RGB/CMYK/HSL/Hex), głębia bitowa, optymalizacja, programy graficzne, CSS background |
+| [04_VIDEO_AUDIO.md](./INF.03.3_Projektowanie_stron/04_VIDEO_AUDIO.md) | Formaty wideo/audio, kodeki vs kontenery, HTML5 `<video>`/`<audio>`, responsive video, YouTube embed, Canvas |
+| [05_HOSTING_DOMENY.md](./INF.03.3_Projektowanie_stron/05_HOSTING_DOMENY.md) | Rodzaje hostingu (shared/VPS/cloud), domeny i TLD, rekordy DNS, SSL/Let's Encrypt, Apache vs Nginx, .htaccess, FTP/SFTP, XAMPP/MAMP |
+| [06_TESTOWANIE_WALIDACJA.md](./INF.03.3_Projektowanie_stron/06_TESTOWANIE_WALIDACJA.md) | DevTools (F12), walidacja HTML/CSS (W3C), SEO (meta, OpenGraph, Core Web Vitals), WCAG 2.0 (A/AA/AAA), PageSpeed, Lighthouse |
 
 ### 🟢 INF.03.4 – Projektowanie i Administrowanie Bazami Danych
 | Plik | Zawartość |
@@ -53,23 +53,23 @@ Oparty na analizie prawdziwych egzaminów 2024–2026. Zawiera:
 | [SQL/02_SQL_ZAAWANSOWANY.md](./INF.03.4_Bazy_danych/SQL/02_SQL_ZAAWANSOWANY.md) | **Wzorce z prawdziwych egzaminów 2024–2026**, 20+ przykładów, LIKE/REGEXP, funkcje daty/stringów, CASE WHEN, podzapytania, ALTER TABLE, mnemotechnika |
 | [02_ER_NORMALIZACJA.md](./INF.03.4_Bazy_danych/02_ER_NORMALIZACJA.md) | Pojęcia baz danych, typy danych MySQL, notacje E-R (Chen/UML/Crow's Foot), relacje 1:1/1:N/M:N z SQL, normalizacja 1NF→3NF z przykładami tabel |
 | [03_MYSQL_ZARZADZANIE.md](./INF.03.4_Bazy_danych/03_MYSQL_ZARZADZANIE.md) | CREATE/GRANT/REVOKE użytkownicy, mysqldump (backup), phpMyAdmin krok po kroku, EXPLAIN/indeksy/ANALYZE, MariaDB vs MySQL, InnoDB vs MyISAM, triggery, procedury |
-| [MariaDB/01_MARIADB.md](./INF.03.4_Bazy_danych/MariaDB/01_MARIADB.md) | Historia MariaDB, różnice vs MySQL, silniki (InnoDB/MyISAM/Aria), window functions, typy INET6/UUID, konfiguracja, backup mariabackup, replikacja Galera |
-| [MySQL/01_MYSQL_QUICK.md](./INF.03.4_Bazy_danych/MySQL/01_MYSQL_QUICK.md) | Szybka referencja MySQL: wszystkie typy danych, DDL/DML/JOINy, funkcje daty/stringów, procedury, triggery, EXPLAIN, typowe błędy z rozwiązaniami |
-| [PhpMyAdmin/01_PHPMYADMIN.md](./INF.03.4_Bazy_danych/PhpMyAdmin/01_PHPMYADMIN.md) | Interfejs phpMyAdmin, tworzenie baz/tabel, import/eksport (.sql/.csv), relacje, zarządzanie użytkownikami, optymalizacja, typowe problemy |
+| [04_MARIADB.md](./INF.03.4_Bazy_danych/04_MARIADB.md) | Historia MariaDB, różnice vs MySQL, silniki (InnoDB/MyISAM/Aria), window functions, typy INET6/UUID, konfiguracja, backup mariabackup, replikacja Galera |
+| [05_MYSQL_QUICK.md](./INF.03.4_Bazy_danych/05_MYSQL_QUICK.md) | Szybka referencja MySQL: wszystkie typy danych, DDL/DML/JOINy, funkcje daty/stringów, procedury, triggery, EXPLAIN, typowe błędy z rozwiązaniami |
+| [06_PHPMYADMIN.md](./INF.03.4_Bazy_danych/06_PHPMYADMIN.md) | Interfejs phpMyAdmin, tworzenie baz/tabel, import/eksport (.sql/.csv), relacje, zarządzanie użytkownikami, optymalizacja, typowe problemy |
 
 ### 🔵 INF.03.5 – Programowanie Aplikacji Internetowych
 | Plik | Zawartość |
 |------|-----------|
 | [PHP/01_PHP_BASICS.md](./INF.03.5_Programowanie_aplikacji/PHP/01_PHP_BASICS.md) | Syntax, zmienne, tablice, pętle, funkcje, formularze GET/POST, sesje, cookies, podstawy MySQLi |
 | [PHP/02_PHP_MYSQL_EGZAMIN.md](./INF.03.5_Programowanie_aplikacji/PHP/02_PHP_MYSQL_EGZAMIN.md) | **Kompletny wzorzec egzaminacyjny PHP+MySQL**, MySQLi OOP vs proceduralne, fetch_assoc/fetch_row, walidacja, CRUD w PHP, 7 typowych błędów z rozwiązaniami |
-| [JavaScript/01_JS_APLIKACJE.md](./INF.03.5_Programowanie_aplikacji/JavaScript/01_JS_APLIKACJE.md) | JS w aplikacjach: Fetch API + PHP backend, LocalStorage, FormData, walidacja, AJAX, XSS/CSRF ochrona, debugging, wzorce projektowe |
+| [03_JS_APLIKACJE.md](./INF.03.5_Programowanie_aplikacji/03_JS_APLIKACJE.md) | JS w aplikacjach: Fetch API + PHP backend, LocalStorage, FormData, walidacja, AJAX, XSS/CSRF ochrona, debugging, wzorce projektowe |
 
 ### 🟤 CMS – WordPress i Joomla
 | Plik | Zawartość |
 |------|-----------|
-| [CMS/00_CMS_INTRO.md](./CMS/00_CMS_INTRO.md) | Porównanie CMS-ów (WordPress/Joomla/Drupal/Magento), zalety, wady, kiedy używać |
-| [CMS/WordPress/SCIAGAWKA_WordPress.md](./CMS/WordPress/SCIAGAWKA_WordPress.md) | Instalacja, panel admina, wpisy/strony/media, wtyczki, motywy, użytkownicy, bezpieczeństwo |
-| [CMS/Joomla/SCIAGAWKA_Joomla.md](./CMS/Joomla/SCIAGAWKA_Joomla.md) | Instalacja, komponenty, moduły, szablony, zarządzanie użytkownikami |
+| [00_CMS_INTRO.md](./CMS/00_CMS_INTRO.md) | Porównanie CMS-ów (WordPress/Joomla/Drupal/Magento), zalety, wady, kiedy używać |
+| [01_WORDPRESS.md](./CMS/01_WORDPRESS.md) | Instalacja, panel admina, wpisy/strony/media, wtyczki, motywy, użytkownicy, bezpieczeństwo |
+| [02_JOOMLA.md](./CMS/02_JOOMLA.md) | Instalacja, komponenty, moduły, szablony, zarządzanie użytkownikami |
 
 ### ⚪ INF.03.6 – Język Obcy Zawodowy
 | Plik | Zawartość |
