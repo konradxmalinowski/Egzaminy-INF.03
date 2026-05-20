@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styl.css">
+    <title>Stylizacja paznocki</title>
+    <script src="skrypt.js" defer></script>
+</head>
+<body>
+    <div class="kontener">
+        <aside>
+            <img src="manicure.jpg" alt="Styliacja paznocki">
+        </aside>
+        <main>
+            <header>
+                <h1>Twoje wymarzone paznokcie</h1>
+            </header>
+            <nav>
+                <button id="kolor-button">Kolor</button>
+                <button id="ksztalt-button">Kształt</button>
+                <button id="wzor-button">Wzór</button>
+            </nav>
+            <section id="sekcja-1">
+                <h2>Kolor</h2>
+                <img src="kolory.png" alt="Kolory paznocki">
+                <br>
+                <input type="color" name="kolor" id="kolor" value="#FF0000">
+            </section>
+            <section id="sekcja-2">
+                <h2>Kształt</h2>
+                <img src="ksztalt.png" alt="Ksztalty paznocki">
+                <br>
+                <select name="ksztalt" id="ksztalt">
+                    <option value="migdal">Migdał</option>
+                    <option value="zaokraglony">Zaokrąglony</option>
+                    <option value="kwadratowy">Kwadratowy</option>
+                    <option value="balerina">Balerina</option>
+                    <option value="zaokraglowy-kwadrat">Zaokrąglony kwadrat</option>
+                </select>
+            </section>
+            <section id="sekcja-3">
+                <h2>Wzór</h2>
+                <br>
+                <input type="number" name="wzor" id="wzor" step="1" min="1" max="10">
+            </section>
+        </main>
+        <footer>
+            <p>Autor strony: <em>Konrad Malinowski</em></p>
+        </footer>
+        
+        <div class="clear-both"></div>
+    </div>
+</body>
+</html>
