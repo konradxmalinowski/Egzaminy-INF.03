@@ -1,10 +1,5 @@
 <?php
-
-$db = new mysqli("localhost", 'root', '', 'przewozy');
-if ($db->connect_error) {
-    echo "<p>Błąd połączenia z bazą danych</p>";
-    exit;
-}
+include('baza.php');
 ?>
 
 <!DOCTYPE html>
@@ -14,21 +9,21 @@ if ($db->connect_error) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Firma Przewozowa</title>
+    <title>Firma przewozowa</title>
 </head>
 
 <body>
     <header>
-        <h1>Firma przewozowa Półdarmo</h1>
+        <h1>Firma przewozowa Póldarmo</h1>
     </header>
     <nav>
-        <a href="">kwerenda1</a>
-        <a href="">kwerenda2</a>
-        <a href="">kwerenda3</a>
-        <a href="">kwerenda4</a>
+        <a href="kw1.png">kwerenda1</a>
+        <a href="kw2.png">kwerenda2</a>
+        <a href="kw3.png">kwerenda3</a>
+        <a href="kw4.png">kwerenda4</a>
     </nav>
     <main>
-        <section class="lewa-sekcja">
+        <section class="sekcja-lewa">
             <h2>Zadania do wykonania</h2>
             <table>
                 <tr>
@@ -38,43 +33,47 @@ if ($db->connect_error) {
                 </tr>
 
                 <?php
-                $zapytanie = "select id_zadania, zadanie, data from zadania;";
-                $wynik = $db->query($zapytanie);
+                    $zapytanie = "SELECT id_zadania, zadanie, data FROM zadania;";
+                    $wynik = $baza -> query($zapytanie);
+                    foreach ($wynik as $wiersz) {
+                        $id = intval($wiersz['id_zadania']);
+                        $zadanie = $wiersz['zadanie'];
+                        $data = $wiersz['data'];
 
-                foreach ($wynik as $wiersz) {
-                    $zadanie = $wiersz['zadanie'];
-                    $data = $wiersz['data'];
-                    $id = $wiersz['id_zadania'];
-
-                    echo "<tr>";
-                    echo "<td>$zadanie</td>";
-                    echo "<td>$data</td>";
-                    echo "<td><a href=\"usun.php?id=$id\" >Usuń</a></td>";
-                    echo "</tr>";
-                }
-                ?>
+                        echo "
+                        <tr>
+                            <td>$zadanie</td>
+                            <td>$data</td>
+                            <td><a href=\"usun.php?id=$id\">Usuń</a></td>
+                        </tr>
+                        ";
+                    }
+                ?> 
             </table>
 
             <form action="przewozy.php" method="post">
-                <label>Zadanie do wykonania: <input type="text" name="zadanie" id="zadanie"></label>
-                <label>Data realizacji: <input type="date" name="data" id="data"></label>
+                <label for="zadanie">Zadanie do wykonania</label>
+                <input type="text" name="zadanie" id="zadanie"> <br>
+                <label for="data">Data realizacji: </label>
+                <input type="date" name="data" id="data">
                 <button type="submit">Dodaj</button>
             </form>
 
             <?php
 
-            if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-                $data = $_POST['data'];
-                $zadanie = $_POST['zadanie'];
-                $zapytanie = "insert into zadania (data, osoba_id, zadanie) VALUES ('$data', 1, '$zadanie');";
-                $db->query($zapytanie);
-            }
+                if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+                    $zadanie = $_POST['zadanie'];
+                    $data = $_POST['data'];
 
+                    $zapytanie = "INSERT INTO zadania (zadanie, data, osoba_id) VALUES ('$zadanie', '$data', 1)";
+                    $baza -> query($zapytanie);
+                }
+                
             ?>
         </section>
-        <section class="prawa-sekcja">
+        <section class="sekcja-prawa">
             <img src="auto.png" alt="auto firmowe">
-            <h3>Nasza specjalność</h3>
+            <h3>Nasza spacjalność</h3>
             <ul>
                 <li>Przeprowadzki</li>
                 <li>Przewóz mebli</li>
@@ -91,7 +90,6 @@ if ($db->connect_error) {
 
 </html>
 
-
 <?php
-$db->close();
+$baza -> close();
 ?>

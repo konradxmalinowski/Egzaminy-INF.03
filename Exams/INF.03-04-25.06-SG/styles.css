@@ -22,12 +22,12 @@ main {
     display: flex;
 }
 
-.lewa-sekcja {
+.sekcja-lewa {
     width: 70%;
     height: 500px;
 }
 
-.prawa-sekcja {
+.sekcja-prawa {
     background-color: mediumseagreen;
     width: 30%;
     height: 500px;
@@ -36,11 +36,10 @@ main {
 
 table {
     border: 1px dashed darkgreen;
-    text-align: center;
     margin: 30px auto;
 }
 
-table,
+td,
 th {
     padding: 5px;
 }
@@ -49,11 +48,11 @@ a {
     color: white;
 }
 
-ul {
+li {
     list-style-type: circle;
 }
 
-tr:hover {
+table tr:hover {
     background-color: darkgreen;
     color: white;
 }

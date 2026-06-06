@@ -1,18 +1,11 @@
 <?php
+    include('baza.php');
+    if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['id'])) {
+        $id = intval($_GET['id']);
 
-$db = new mysqli("localhost", 'root', '', 'przewozy');
-if ($db->connect_error) {
-    echo "<p>Błąd połączenia z bazą danych</p>";
-    exit;
-}
-
-
-if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['id'])) {
-    $id = $_GET['id'];
-    $zapytanie = "delete from zadania where id_zadania = $id";
-    $db->query($zapytanie);
-}
-
-header("Location: przewozy.php");
-
+        $zapytanie = "DELETE FROM zadania WHERE id_zadania = $id;";
+        $wynik = $baza -> query($zapytanie);
+        $baza -> close();
+        header("Location: przewozy.php");
+    }
 ?>
