@@ -1,0 +1,56 @@
+body {
+    font-family: Georgia;
+    color: white;
+}
+
+header, footer {
+    background-color: #824555;
+    text-align: center;
+    padding: 20px;
+}
+
+.sekcja-lewa, .sekcja-srodkowa {
+    width: 30%;
+    height: 350px;
+}
+
+.sekcja-lewa {
+    background-color: #A26475;
+}
+
+.sekcja-srodkowa {
+    background-color: #824555;
+}
+
+.sekcja-prawa {
+    background-color: #A26470;
+    width: 40%;
+    height: 350px;
+    overflow: auto;
+}
+
+.sekcja-lewa, .sekcja-prawa, .sekcja-srodkowa {
+    float: left;
+}
+
+footer {
+    clear: both;
+}
+
+img {
+    float: left;
+    height: 50px;
+}
+
+table, p, td {
+    margin: 10px;
+}
+
+dt {
+    padding-top: 20px;
+}
+
+td, th {
+    border: 3px solid #824555;
+    padding: 5px;
+}
